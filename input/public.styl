@@ -1,0 +1,494 @@
+@import "reset.css";
+/*引入css文件的一种方式*/
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+ filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+ body{
+ 	font-size: 16Px;
+	background #efefef
+ }
+
+.header
+	height 400px
+	padding 50px 35px 0
+	box-sizing border-box
+	background url('../img/372e74ea94e0a9e8fc267d0bed3cefae-750+400.jpg') center top/auto 400px no-repeat
+	display flex
+	justify-content space-between
+	.user-info
+		color #ffffff
+		.name
+			padding-bottom 20px
+			font-size 52px
+			line-height 1
+			.age
+				font-size 24px
+		p
+			font-size 24px
+			line-height 54px
+		.report-id
+			padding-top 30px
+			line-height 1
+			font-size 24px
+			color #fcff08
+	.score
+		.suggest
+			margin-top 10px
+			height 40px
+			font-size 22px
+			color #37a446
+			padding 0 10px
+			line-height 40px
+			border-radius 20px
+			background #ffffff
+		.pic
+			height 200px
+			background url('../img/ae9cb5ed97b8eab15562ff52a8721a12-184+200.png') center center/auto 100% no-repeat
+			.value
+				font-size 50px
+				color #ffbb33
+				padding-top 50px
+				line-height 76px
+				text-align center
+			.title
+				width 120px
+				height 34px
+				background #ff4c5b
+				border-radius 17px
+				color #ffffff
+				line-height 34px
+				font-size 24px
+				text-align center
+				margin 15px auto 0
+
+.main
+	padding 0 35px
+	margin-top -60px
+	section
+		background #ffffff
+		border-radius 15px
+		padding 0 30px 30px
+		box-shadow 5px 5px 10px rgba(#000,0.05)
+		&+section 
+			margin-top 60px
+		.section-title
+			font-size 26px
+			color #ffffff
+			text-align center
+			width 360px
+			height 56px
+			line-height 56px
+			background #2ba246
+			border-radius 28px
+			margin 0 auto 
+			transform translateY(-28px)
+		h4
+			position relative
+			font-size 26px
+			color #1ab2b9
+			line-height 54px
+			padding-left 10px
+			&:after
+				content ''
+				position absolute
+				height 20px
+				top 50%
+				margin-top -10px
+				left 0
+				width 2px
+				background #1ab2b9
+	.refuse-rate-block
+		padding-top 30px
+		padding-bottom 30px
+		text-align center
+		h3
+			font-size 30px
+			color #333333
+
+		.value
+			padding 20px 0
+			font-size 70px
+			color #ff8d26
+			line-height 1
+		.value-cn
+			font-size 22px
+			color #999999
+		.progress
+			padding-top 20px
+			.indicator
+				margin 0 8px
+				height 70px
+				background url('../img/64406942782391415d6fa32d0139b62a-46+57.png') -10px center/auto 57px no-repeat
+				transition 0.3s
+			.bar
+				border 8px solid #f1f3fd
+				border-radius 19px
+				height 22px
+				span 
+					display block
+					height 100%
+					border-radius 11px
+					background linear-gradient(to right ,#84ee96,#ffc40f,#fe5253) left center no-repeat
+					
+			.text
+				padding 0 8px
+				display flex
+				justify-content space-between
+				.value
+					color #555555
+					font-size 20px
+
+	.public-content-block
+		font-size 24px
+		color #333333
+		line-height 50px
+		span
+			color #666666
+		.value
+			font-size 30px
+			color #fff
+			padding 0 10px
+			line-height 40px
+			height 40px
+			display inline-block
+			vertical-align top
+			margin-top 5px
+			background #0aa9b2
+			border-radius 5px
+	.history-info-block
+		.tabs-control
+			display flex
+			justify-content center
+			.wrap
+				line-height 50px
+				height 50px
+				font-size 24px
+				color #01adb8
+				border-radius 10px
+				border 2px solid #01adb8
+				display flex
+				text-align center
+				overflow hidden
+			.item
+				width 217px
+				transition 0.3s
+				&.active
+					background #1bacb3
+					color #ffffff
+		.tabs-wrap
+			padding-top 50px
+			.tabs-item
+				display flex
+				text-align center
+				.item
+					flex 1
+					&+.item
+						position relative
+						&:after
+							content ''
+							position absolute
+							left 0
+							top 20px
+							bottom 20px
+							border-left 1px solid #e1e1e1
+				h5
+					font-size 28px
+					color #36a446
+					&.c03adb8
+						color #03adb8
+				.value
+					padding-top 30px
+					font-size 24px
+					color #333333m
+	.blacklist-info-block
+		.detalis-info
+			display flex
+			justify-content space-between
+			.item
+				flex 0 0 140px
+				text-align center
+				.chart
+					width 140px
+					height 140px
+					display flex
+					align-items center
+					justify-content center
+					border 2px solid #91c96a
+					box-shadow 0 0 10px rgba(#91c96a,0.6),
+					inset 0 0 10px rgba(#f6f6f5,0.8)
+					border-radius 50%
+					background #f6f6f5
+					font-size 24px
+					color #999999
+					.orange
+						font-size 32px
+						color #ff8933
+						line-height 1
+						small
+							font-size 20px
+				h5
+					padding 10px 0
+					font-size 24px
+					color #333333
+					line-height 34px
+
+		.charts
+			display flex
+			justify-content space-between
+			canvas
+				width 300px
+				height 300px
+			ul
+				width 320px
+				padding-top 20px
+				li
+					font-size 22px
+					color #333333
+					line-height 44px
+					white-space nowrap
+					text-overflow ellipsis
+					overflow hidden
+				.pl20
+					padding-left 20px
+					position relative
+					&:after
+						content ''
+						position absolute
+						width 14px
+						height 14px
+						left 0
+						top 50%
+						margin-top -7px
+				.cf1f1f1
+					&:after
+						background #5a5a5a
+				.cf2f1ee
+					&:after
+						background #d0df3e
+				.cf3f0ee
+					&:after
+						background #ff723c
+				.cf3efee
+					&:after
+						background #ed1c24
+				.cf0f1ef
+					&:after
+						background #2ba246
+	.public-bdt
+		.content
+			&>.item
+				&+.item
+					margin-top 20px
+					padding-top 20px
+					border-top 1px solid #e1e1e1
+	.more-info-block
+		.pt20
+			padding-top 30px
+		
+		.table-three-column
+			border-bottom 1px solid #fafafa
+			font-size 24px
+			line-height 58px
+			thead
+				background #eeeeee
+				color #333333
+			tbody
+				color #666666
+			th
+			td
+			tr
+				font-weight normal
+				padding 0 20px
+				text-align left
+			tbody
+				tr:nth-child(even)
+					background #f9f9f9
+		.tac
+			.more
+				display block
+				margin 40px auto 0
+				width 180px
+				height 56px
+				border 2px solid #f8f8f8
+				border-radius 28px
+				line-height 56px
+				font-size 24px
+				color #666666
+				text-align center
+				span
+					display inline-block
+					padding-left 30px
+					background url('../img/0436ae0308484eb52b750432065444c0-18+10.png') 0 center/20px auto no-repeat
+		.charts-line
+			height 360px
+			width 100%
+		.btn-group
+			padding 20px 0
+			display flex
+			justify-content space-between
+			font-size 24px
+			color #666666
+			line-height 42px
+			span
+			a
+				height 42px
+			a
+				border 1px solid #c4c4c4
+				padding 0 20px
+				border-radius 21px
+				transition 0.3s
+				&:hover
+				&.active
+					border-color #2ba246
+					background #2ba246
+					color #ffffff
+	.change-info-block
+		.tabs-control
+			padding-top 20px
+			display flex
+			justify-content center
+			.wrap
+				line-height 50px
+				height 50px
+				font-size 24px
+				color #01adb8
+				border-radius 10px
+				border 2px solid #01adb8
+				display flex
+				text-align center
+				overflow hidden
+			.item
+				width 217px
+				transition 0.3s
+				&.active
+					background #1bacb3
+					color #ffffff
+	.user-info-block
+		.money
+			.df
+				padding-top 30px
+				display flex
+				justify-content space-between
+			.round
+				width 180px
+				height 180px
+				display flex
+				align-items center
+				justify-content center
+				font-size 20px
+				color #ffffff
+				line-height 40px
+				text-align center
+				border-radius 50%
+				&:nth-child(1)
+					background #ffc2a6
+				&:nth-child(2)
+					background #ffa7a6
+				&:nth-child(3)
+					background #a7defb
+			.item
+				background #f1f1f1
+				width 140px
+				text-align center
+				font-size 20px
+				color #555555
+				line-height 30px
+				padding 10px 0
+				&:nth-child(odd)
+					background #f4f4f4
+
+				
+		.debit-card
+			padding-top 20px
+			.df
+				display flex
+				background #7ecfea
+				font-size 20px
+				color #ffffff
+				height 40px
+				border-radius 0 20px 20px 0
+				line-height 40px
+				overflow hidden
+				&.text
+					padding-bottom 20px
+					background none
+					color #333333
+					.w40
+						background none
+				.w40
+				.w60
+					flex 1 1 auto;
+					text-align center
+				.w40
+					background #ff7f7e
+					border-radius 0 20px 20px 0
+
+		.watch-container
+			width 300px
+			height 300px
+		.credit-card
+			position relative
+			.df
+				display flex
+				align-items center
+			.watch-container
+				flex 0 0 300px
+			.tips
+				padding-left 20px
+				display flex
+				flex-direction column
+				font-size 20px
+				color #333333
+				line-height 30px
+				span
+					position relative
+					display block
+					padding-left 20px
+					&+span
+						margin-top 20px
+					&:after
+						content ''
+						width 14px
+						height 14px
+						position absolute
+						left 0
+						top 50%
+						margin-top -7px
+						background #872dfe
+						border-radius 50%
+					&:nth-child(2)
+						&:after
+							background #3b92ff
+					&:nth-child(3)
+						&:after
+							background #ff495e
+			.round
+				position absolute
+				right 0
+				top 0
+				.item
+					position absolute
+					top 50px
+					right 30px
+					width 100px
+					height 100px
+					font-size 20px
+					color #ffffff
+					text-align center
+					line-height 24px
+					border-radius 50%
+					background rgba(#68c49b,0.6)
+					display flex
+					align-items center
+					justify-content center
+					&+.item
+						top 120px
+						right 0
+						background rgba(#f37f8a,0.6)
+					
+// demo
